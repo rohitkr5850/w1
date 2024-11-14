@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Pagination App</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #users-container {
+        width: 80%;
+        max-width: 600px;
+        margin: 20px 0;
+    }
+    .user-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background-color: #f9f9f9;
+    }
+    .pagination {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .pagination button {
+        padding: 8px 12px;
+        border: 1px solid #007bff;
+        background-color: #f0f0f0;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .pagination button.active {
+        background-color: #007bff;
+        color: #fff;
+    }
+    .error {
+        color: red;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<h2>User Pagination App</h2>
+<div id="users-container"></div>
+<div class="pagination" id="pagination-buttons"></div>
+<p id="error-message" class="error"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
